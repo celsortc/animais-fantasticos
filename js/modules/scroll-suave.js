@@ -15,14 +15,9 @@ export default class ScrollSuave {
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
     section.scrollIntoView(this.options);
-
-    // forma alternativa
-    // const topo = section.offsetTop;
-    // window.scrollTo({
-    //   top: topo,
-    //   behavior: 'smooth',
-    // });
+    console.log(this);
   }
+
   addLinkEvent() {
     this.linksInternos.forEach((link) => {
       link.addEventListener("click", this.scrollToSection);

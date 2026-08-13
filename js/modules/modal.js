@@ -16,18 +16,6 @@ export default function initModal() {
   }
 
   if (btnAbrir && btnFechar && containerModal) {
-    //simplificando com toggle
-
-    // function abrirModal(event) {
-    //   event.preventDefault();
-    //   containerModal.classList.add("ativo");
-    // }
-
-    // function fecharModal(event) {
-    //   event.preventDefault();
-    //   containerModal.classList.remove("ativo");
-    // }
-
     btnAbrir.addEventListener("click", toggleModal);
     btnFechar.addEventListener("click", toggleModal);
     containerModal.addEventListener("click", cliqueForaModal);
